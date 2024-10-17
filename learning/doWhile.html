@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do..while</title>
+</head>
+<body>
+    <script lang="javascript" type="text/javascript">
+        var actualpin = "2848";
+        var pin;
+        var count = 0;
+
+        do {
+            pin = prompt("Enter your pin ...", "Enter..");
+            count++;
+
+        } while (pin != actualpin && count < 3);
+        if (pin == actualpin)
+        {
+            document.write("welcome user");
+        } else{
+            document.write("Account Locked")
+        }
+
+    </script>
+
+</body>
+</html>
